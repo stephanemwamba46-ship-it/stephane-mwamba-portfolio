@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio de Stéphane Mwamba, développeur web et logiciel spécialisé dans les solutions digitales."
+    >
+
+    <title>Stéphane Mwamba — Développeur Web & Mobile</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <!-- LOGO -->
+            <a href="#accueil" class="logo">
+                Stéphane<span>.</span>
+            </a>
+
+            <!-- NAVIGATION -->
+            <ul class="nav-links">
+
+                <!-- ACCUEIL -->
+                <li>
+                    <a href="#accueil">
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+
+                        <span
+                            class="nav-text"
+                            data-i18n="navHome"
+                        >
+                            Accueil
+                        </span>
+                    </a>
+                </li>
+
+                <!-- À PROPOS -->
+                <li>
+                    <a href="#apropos">
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+
+                        <span
+                            class="nav-text"
+                            data-i18n="navAbout"
+                        >
+                            À propos
+                        </span>
+                    </a>
+                </li>
+
+                <!-- EXPERTISES -->
+                <li>
+                    <a href="#expertises">
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </span>
+
+                        <span
+                            class="nav-text"
+                            data-i18n="navExpertises"
+                        >
+                            Expertises
+                        </span>
+                    </a>
+                </li>
+
+                <!-- PROJETS -->
+                <li>
+                    <a href="#projets">
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-folder-open"></i>
+                        </span>
+
+                        <span
+                            class="nav-text"
+                            data-i18n="navProjects"
+                        >
+                            Projets
+                        </span>
+                    </a>
+                </li>
+
+                <!-- CONTACT -->
+                <li>
+                    <a href="#contact">
+                        <span class="nav-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+
+                        <span
+                            class="nav-text"
+                            data-i18n="navContact"
+                        >
+                            Contact
+                        </span>
+                    </a>
+                </li>
+
+                <!-- PARAMÈTRES -->
+                <li class="settings-item">
+
+                    <button
+                        class="settings-toggle"
+                        type="button"
+                        aria-label="Paramètres"
+                    >
+                        <span class="settings-icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </span>
+
+                        <span
+                            class="settings-text"
+                            data-i18n="settings"
+                        >
+                            Paramètres
+                        </span>
+                    </button>
+
+                    <!-- MENU DES PARAMÈTRES -->
+                    <div class="settings-menu">
+
+                        <!-- LANGUE -->
+                        <div class="settings-section">
+
+                            <div class="settings-section-title">
+
+                                <i class="fa-solid fa-globe"></i>
+
+                                <span data-i18n="language">
+                                    Langue
+                                </span>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="language-option active"
+                                data-language="fr"
+                            >
+                                <span>🇫🇷</span>
+                                <span>Français</span>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="language-option"
+                                data-language="en"
+                            >
+                                <span>🇬🇧</span>
+                                <span>English</span>
+                            </button>
+
+                        </div>
+
+                        <!-- MODE SOMBRE -->
+                        <button
+                            type="button"
+                            class="settings-option"
+                            id="dark-mode-toggle"
+                        >
+                            <span class="settings-option-icon">
+                                <i class="fa-solid fa-moon"></i>
+                            </span>
+
+                            <span data-i18n="darkMode">
+                                Mode sombre
+                            </span>
+                        </button>
+
+                        <!-- AIDE -->
+                        <button
+                            type="button"
+                            class="settings-option"
+                            id="help-button"
+                        >
+                            <span class="settings-option-icon">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </span>
+
+                            <span data-i18n="help">
+                                Aide
+                            </span>
+                        </button>
+
+                        <!-- CHATBOT -->
+                        <button
+                            type="button"
+                            class="settings-option"
+                            id="chatbot-button"
+                        >
+                            <span class="settings-option-icon">
+                                <i class="fa-solid fa-comments"></i>
+                            </span>
+
+                            <span data-i18n="chatbot">
+                                Chatbot
+                            </span>
+                        </button>
+
+                        <!-- PLUS D'INFORMATIONS -->
+                        <button
+                            type="button"
+                            class="settings-option"
+                            id="information-button"
+                        >
+                            <span class="settings-option-icon">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </span>
+
+                            <span data-i18n="information">
+                                Plus d'informations
+                            </span>
+                        </button>
+
+                        <!-- CONFIDENTIALITÉ -->
+                        <button
+                            type="button"
+                            class="settings-option"
+                            id="privacy-button"
+                        >
+                            <span class="settings-option-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </span>
+
+                            <span data-i18n="privacy">
+                                Confidentialité
+                            </span>
+                        </button>
+
+                        <!-- CONDITIONS -->
+                        <button
+                            type="button"
+                            class="settings-option"
+                            id="terms-button"
+                        >
+                            <span class="settings-option-icon">
+                                <i class="fa-solid fa-file-contract"></i>
+                            </span>
+
+                            <span data-i18n="terms">
+                                Conditions d'utilisation
+                            </span>
+                        </button>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <!-- MENU MOBILE -->
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Ouvrir le menu"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==================== HERO ==================== -->
+
+        <section id="accueil" class="hero">
+
+            <div class="hero-content">
+
+                <h1>
+                    Stéphane<br>
+                    <span>Mwamba.</span>
+                </h1>
+
+                <h2 data-i18n="heroTitle">
+                    Développeur Web & Mobile
+                </h2>
+
+                <p
+                    class="hero-description"
+                    data-i18n="heroDescription"
+                >
+                    Je transforme vos idées en solutions digitales adaptées.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projets"
+                        class="btn btn-primary"
+                        data-i18n="heroProjects"
+                    >
+                        Voir mes projets →
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="btn btn-secondary"
+                        data-i18n="heroContact"
+                    >
+                        Me contacter
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== À PROPOS ==================== -->
+
+        <section id="apropos" class="about">
+
+            <div class="section-heading">
+
+                <p
+                    class="section-label"
+                    data-i18n="aboutLabel"
+                >
+                    À PROPOS
+                </p>
+
+                <h2 data-i18n="aboutTitle">
+                    J'apporte des solution à vos besoins.
+                </h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <p
+                    class="hero-description"
+                    data-i18n="aboutDescription"
+                >
+                Je suis développeur Web & Mobile, Je conçois de solutions numériques capables de répondre à des problèmes concrets dans différents domaines, 
+                Je développe des sites, applications, plateformes et outils métier en combinant programmation, gestion des données et compréhension des besoins utilisateurs.
+                À travers mes projets personnels, académiques et professionnels, je cherche à transformer une idée ou un besoin en une solution fonctionnelle, accessible et adaptée à son contexte.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== EXPERTISES ==================== -->
+
+        <section id="expertises" class="expertises">
+
+            <div class="section-heading">
+
+                <p
+                    class="section-label"
+                    data-i18n="expertisesLabel"
+                >
+                    EXPERTISES
+                </p>
+
+                <h2 data-i18n="expertisesTitle">
+                    Ce que je fais
+                </h2>
+
+            </div>
+
+
+            <div class="expertises-grid">
+
+                <!-- 01 -->
+                <article class="expertise-card">
+
+                    <span>01</span>
+
+                    <h3 data-i18n="expertiseWebTitle">
+                        Développement Web
+                    </h3>
+
+                    <p data-i18n="expertiseWebDescription">
+                        Création de sites, plateformes et applications
+                        modernes adaptées aux besoins.
+                    </p>
+
+                </article>
+
+
+                <!-- 02 -->
+                <article class="expertise-card">
+
+                    <span>02</span>
+
+                    <h3 data-i18n="expertiseSoftwareTitle">
+                        Développement Logiciel
+                    </h3>
+
+                    <p data-i18n="expertiseSoftwareDescription">
+                        Conception d'applications et outils métiers 
+                        destinés à répondre aux besoins spécifiques des entreprises
+                    </p>
+
+                </article>
+
+
+                <!-- 03 -->
+                <article class="expertise-card">
+
+                    <span>03</span>
+
+                    <h3 data-i18n="expertiseDataTitle">
+                        Informatique de gestion
+                    </h3>
+
+                    <p data-i18n="expertiseDataDescription">
+                        Conception de systèmes permettant d'organiser,
+                        gérer et exploiter les données et processus des organisations.
+                    </p>
+
+                </article>
+
+
+                <!-- 04 -->
+                <article class="expertise-card">
+
+                    <span>04</span>
+
+                    <h3 data-i18n="expertiseDesignTitle">
+                       Bases de données & S I
+                    </h3>
+
+                    <p data-i18n="expertiseDesignDescription">
+                    Modélisation, implémentation, gestion et structuraction
+                    des bases de données pour une meilleure gestion d'informations.
+                    </p>
+
+                </article>
+
+
+                <!-- 05 -->
+                <article class="expertise-card">
+
+                    <span>05</span>
+
+                    <h3 data-i18n="expertiseDigitalTitle">
+                        Solutions numérique & automatisation
+                    </h3>
+
+                    <p data-i18n="expertiseDigitalDescription">
+                    Conception de solutions numériques adaptées 
+                    aux problématiques réelles et l'automatisation grace a l'IA
+                    </p>
+
+                </article>
+
+
+                <!-- 06 -->
+                <article class="expertise-card">
+
+                    <span>06</span>
+
+                    <h3 data-i18n="expertiseMarketingTitle">
+                        Sécurité et chiffrement
+                    </h3>
+
+                    <p data-i18n="expertiseMarketingDescription">
+                    Nous fournissons une protections contre les attaques
+                    des malveillants, et nous mettons a l'abbri vos données et informations.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== TECHNOLOGIES ==================== -->
+
+        <section class="technologies">
+
+            <div class="section-heading">
+
+                <p
+                    class="section-label"
+                    data-i18n="technologiesLabel"
+                >
+                    TECHNOLOGIES
+                </p>
+
+                <h2 data-i18n="technologiesTitle">
+                    Les outils que j'utilise.
+                </h2>
+
+            </div>
+
+
+            <div class="technologies-list">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>Python</span>
+                <span>C#</span>
+                <span>SQL</span>
+                <span>Laravel</span>
+                <span>Django</span>
+                <span>React</span>
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>Canva</span>
+                <span>Capcut</span>
+                <span>Photoshop</span>
+
+            </div>
+
+        </section>
+
+
+<!-- ==================== PROJETS ==================== -->
+
+<section id="projets" class="projects">
+
+    <div class="section-heading">
+
+        <p
+            class="section-label"
+            data-i18n="projectsLabel"
+        >
+            PROJETS
+        </p>
+
+        <h2 data-i18n="projectsTitle">
+            Quelques solutions que j'ai conçues.
+        </h2>
+
+        <p
+            class="projects-description"
+            data-i18n="projectsDescription"
+        >
+            Découvrez quelques projets qui illustrent mon savoir-faire
+            et ma passion pour le développement.
+        </p>
+
+    </div>
+
+
+    <!-- ==================== CONTRÔLES ==================== -->
+
+    <div class="projects-controls">
+
+        <button
+            type="button"
+            class="projects-arrow"
+            id="projects-prev"
+            data-i18n-aria="previousProject"
+            aria-label="Projet précédent"
+        >
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+
+        <a
+            href="#"
+            
+            data-i18n="projectsAll"
+            class="projects-all-link"
+            
+        >
+        
+          
+        </a>
+
+
+        <button
+            type="button"
+            class="projects-arrow"
+            id="projects-next"
+            data-i18n-aria="nextProject"
+            aria-label="Projet suivant"
+        >
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+
+    <!-- ==================== SLIDER ==================== -->
+
+    <div class="projects-slider-wrapper">
+
+        <div
+            class="projects-slider"
+            id="projects-slider"
+        >
+
+
+            <!-- ==================== NZELAPAY ==================== -->
+
+            <article class="project-card-new">
+
+                <div class="project-card-image">
+
+                    <img
+                        src="images/nzelapay-mockup.png"
+                        alt="Interface du projet NzelaPay"
+                    >
+
+
+                    <span
+                        class="project-category-badge"
+                        data-i18n="projectNzelaCategory"
+                    >
+                        Fintech · Marketplace
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="project-arrow"
+                        data-i18n-aria="projectDiscoverNzela"
+                        aria-label="Découvrir NzelaPay"
+                    >
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="project-card-body">
+
+                    <div class="project-brand">
+
+                        <span class="project-brand-icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </span>
+
+                        <span>
+                            NZELAPAY
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        NzelaPay
+                    </h3>
+
+
+                    <p data-i18n="projectNzelaDescription">
+                        Plateforme de paiement et marketplace de produits
+                        et services numériques.
+                    </p>
+
+
+                    <div class="project-meta">
+
+                        <span data-i18n="webSoftware">
+                            <i class="fa-solid fa-code"></i>
+                            Web & Logiciel
+                        </span>
+
+
+                        <span data-i18n="fintech">
+                            <i class="fa-solid fa-coins"></i>
+                            Fintech
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================== LEMARCHÉ ==================== -->
+
+            <article class="project-card-new">
+
+                <div class="project-card-image">
+
+                    <img
+                        src="images/lemarche-mockup.png"
+                        alt="Interface du projet Lemarché"
+                    >
+
+
+                    <span
+                        class="project-category-badge"
+                        data-i18n="projectLemarcheCategory"
+                    >
+                        Marketplace
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="project-arrow"
+                        data-i18n-aria="projectDiscoverLemarche"
+                        aria-label="Découvrir Lemarché"
+                    >
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="project-card-body">
+
+                    <div class="project-brand">
+
+                        <span class="project-brand-icon">
+                            <i class="fa-solid fa-shop"></i>
+                        </span>
+
+                        <span>
+                            LEMARCHÉ
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Lemarché
+                    </h3>
+
+
+                    <p data-i18n="projectLemarcheDescription">
+                        Plateforme mettant en relation vendeurs et
+                        acheteurs dans un espace numérique simple.
+                    </p>
+
+
+                    <div class="project-meta">
+
+                        <span data-i18n="ecommerce">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            E-commerce
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================== SANTÉ ==================== -->
+
+            <article class="project-card-new">
+
+                <div class="project-card-image">
+
+                    <img
+                        src="images/sante-mockup.png"
+                        alt="Interface de la plateforme de gestion des malades"
+                    >
+
+
+                    <span
+                        class="project-category-badge"
+                        data-i18n="projectHealthCategory"
+                    >
+                        Santé · Gestion
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="project-arrow"
+                        data-i18n-aria="projectDiscoverHealth"
+                        aria-label="Découvrir la plateforme de santé"
+                    >
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="project-card-body">
+
+                    <div class="project-brand">
+
+                        <span class="project-brand-icon">
+                            <i class="fa-solid fa-hospital"></i>
+                        </span>
+
+                        <span>
+                            SOLUTION SANTÉ
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Gestion des malades
+                    </h3>
+
+
+                    <p data-i18n="projectHealthDescription">
+                        Solution web destinée à la gestion des patients
+                        et des activités hospitalières.
+                    </p>
+
+
+                    <div class="project-meta">
+
+                        <span data-i18n="dataManagement">
+                            <i class="fa-solid fa-database"></i>
+                            Gestion de données
+                        </span>
+
+
+                        <span data-i18n="health">
+                            <i class="fa-solid fa-hospital-user"></i>
+                            Santé
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================== MS AGENCY ==================== -->
+
+            <article class="project-card-new">
+
+                <div class="project-card-image">
+
+                    <img
+                        src="images/ms-agency-mockup.png"
+                        alt="Interface du projet MS Agency"
+                    >
+
+
+                    <span
+                        class="project-category-badge"
+                        data-i18n="projectAgencyCategory"
+                    >
+                        Digital · Services
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="project-arrow"
+                        data-i18n-aria="projectDiscoverAgency"
+                        aria-label="Découvrir MS Agency"
+                    >
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="project-card-body">
+
+                    <div class="project-brand">
+
+                        <span class="project-brand-icon">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </span>
+
+                        <span>
+                            MS AGENCY
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        MS Agency
+                    </h3>
+
+
+                    <p data-i18n="projectAgencyDescription">
+                        Plateforme de services digitaux, création web,
+                        marketing et formations.
+                    </p>
+
+
+                    <div class="project-meta">
+
+                        <span data-i18n="digitalSolutions">
+                            <i class="fa-solid fa-globe"></i>
+                            Solutions digitales
+                        </span>
+
+
+                        <span data-i18n="marketing">
+                            <i class="fa-solid fa-chart-line"></i>
+                            Marketing
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================== EKOLIER ==================== -->
+
+            <article class="project-card-new">
+
+                <div class="project-card-image">
+
+                    <img
+                        src="images/ekolier-mockup.png"
+                        alt="Interface du projet Ekolier"
+                    >
+
+
+                    <span
+                        class="project-category-badge"
+                        data-i18n="projectEkolierCategory"
+                    >
+                        Éducation · Gestion
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="project-arrow"
+                        data-i18n-aria="projectDiscoverEkolier"
+                        aria-label="Découvrir Ekolier"
+                    >
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="project-card-body">
+
+                    <div class="project-brand">
+
+                        <span class="project-brand-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </span>
+
+                        <span>
+                            EKOLIER
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Ekolier
+                    </h3>
+
+
+                    <p data-i18n="projectEkolierDescription">
+                        Plateforme destinée à la gestion scolaire et
+                        au suivi des activités éducatives.
+                    </p>
+
+
+                    <div class="project-meta">
+
+                        <span data-i18n="education">
+                            <i class="fa-solid fa-school"></i>
+                            Éducation
+                        </span>
+
+
+                        <span data-i18n="management">
+                            <i class="fa-solid fa-database"></i>
+                            Gestion
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ==================== CHIFFRES CLÉS ==================== -->
+
+        <section class="stats-section">
+
+            <div class="stats-overlay"></div>
+
+            <div class="stats-content">
+
+                <p
+                    class="stats-label"
+                    data-i18n="statsLabel"
+                >
+                    MON PARCOURS EN CHIFFRES
+                </p>
+
+                <h2 data-i18n="statsTitle">
+                    Des idées transformées en réalisations concrètes.
+                </h2>
+
+
+                <div class="stats-grid">
+
+                    <!-- PROJETS -->
+                    <div class="stat-item">
+
+                        <strong
+                            class="stat-number"
+                            data-target="5"
+                            data-suffix="+"
+                        >
+                            0
+                        </strong>
+
+                        <span data-i18n="statsProjects">
+                            Projets réalisés
+                        </span>
+
+                    </div>
+
+
+                    <!-- TECHNOLOGIES -->
+                    <div class="stat-item">
+
+                        <strong
+                            class="stat-number"
+                            data-target="10"
+                            data-suffix="+"
+                        >
+                            0
+                        </strong>
+
+                        <span data-i18n="statsTechnologies">
+                            Technologies utilisées
+                        </span>
+
+                    </div>
+
+
+                    <!-- EXPERTISES -->
+                    <div class="stat-item">
+
+                        <strong
+                            class="stat-number"
+                            data-target="6"
+                            data-suffix=""
+                        >
+                            0
+                        </strong>
+
+                        <span data-i18n="statsExpertises">
+                            Domaines d'expertise
+                        </span>
+
+                    </div>
+
+
+                    <!-- PERSONNES -->
+                    <div class="stat-item">
+
+                        <strong
+                            class="stat-number"
+                            data-target="20"
+                            data-suffix="+"
+                        >
+                            0
+                        </strong>
+
+                        <span data-i18n="statsPeople">
+                            Personnes accompagnées
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== CONTACT ==================== -->
+
+        <section id="contact" class="contact">
+
+            <div class="section-heading">
+
+                <p
+                    class="section-label"
+                    data-i18n="contactLabel"
+                >
+                    CONTACT
+                </p>
+
+                <h2 data-i18n="contactTitle">
+                    Vous avez un un projet ou un besoin ?
+                </h2>
+
+                <p
+                    class="section-description"
+                    data-i18n="contactDescription"
+                >
+                Parlons-en et voyons comment le transformer une solution digitale
+                </p>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <!-- EMAIL -->
+                <a
+                    href="mailto:stephanemwamba46@gmail.com"
+                    class="contact-item"
+                >
+
+                    <span class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+
+                    <span class="contact-text">
+
+                        <strong data-i18n="email">
+                            Email
+                        </strong>
+
+                        <span>
+                            stephanemwamba46@gmail.com
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+                <!-- TÉLÉPHONE -->
+                <a
+                    href="tel:+243971032234"
+                    class="contact-item"
+                >
+
+                    <span class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+
+                    <span class="contact-text">
+
+                        <strong data-i18n="phone">
+                            Téléphone
+                        </strong>
+
+                        <span>
+                            +243 971 032 234
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+                <!-- WHATSAPP -->
+                <a
+                    href="https://wa.me/243971032234"
+                    class="contact-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <span class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </span>
+
+                    <span class="contact-text">
+
+                        <strong data-i18n="whatsapp">
+                            WhatsApp
+                        </strong>
+
+                        <span>
+                            +243 971 032 234
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+                <!-- LOCALISATION -->
+                <div class="contact-item">
+
+                    <span class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+
+                    <span class="contact-text">
+
+                        <strong data-i18n="location">
+                            Localisation
+                        </strong>
+
+                        <span>
+                            Kinshasa, RDC
+                        </span>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="mailto:stephanemwamba46@gmail.com"
+                class="btn btn-primary"
+            >
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                <span data-i18n="contactButton">
+                    Me contacter
+                </span>
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <!-- MARQUE -->
+            <div class="footer-brand">
+
+                <a
+                    href="#accueil"
+                    class="logo"
+                >
+                    Stéphane<span>.</span>
+                </a>
+
+                <p data-i18n="footerDescription">
+                    Je transforme des idées en solutions digitales concrètes.
+                </p>
+
+            </div>
+
+
+         <!-- ==================== EXPERTISES ==================== -->
+
+<div class="footer-column">
+
+    <h3 data-i18n="footerExpertises">
+        Expertises
+    </h3>
+
+    <span data-i18n="footerWeb">
+        Développement Web
+    </span>
+
+    <span data-i18n="footerDigital">
+        Développement logiciel
+    </span>
+
+    <span data-i18n="footerManagement">
+        Application métier
+    </span>
+
+    <span data-i18n="footerApplications">
+        Bases de données
+    </span>
+
+    <span data-i18n="footerEntrepreneurship">
+       Informatique de gestion
+    </span>
+    
+    <span data-i18n="footerchriffrement">
+       Sécurité et chriffrement
+    </span>
+
+</div>
+
+<!-- ==================== NAVGATION ==================== -->
+
+<div class="footer-column">
+
+    <h3 data-i18n="footerNavigation">
+        Navigation
+    </h3>
+
+    <span data-i18n="footerAccueil">
+        Accueil
+    </span>
+
+    <span data-i18n="footerApropos">
+        À propos
+    </span>
+
+    <span data-i18n="footerProjets">
+        Projets
+    </span>
+
+    <span data-i18n="footerContact">
+        Contact
+    </span>
+</div>
+
+<!-- ==================== LÉGAL ==================== -->
+
+<div class="footer-column">
+
+    <h3 data-i18n="footerLegal">
+        Légal
+    </h3>
+
+    <a
+        href="#"
+        id="footer-information-link"
+        data-i18n="footerLegalNotice"
+    >
+        Mentions légales
+    </a>
+
+    <a
+        href="#"
+        id="footer-privacy-link"
+        data-i18n="footerPrivacy"
+    >
+        Politique de confidentialité
+    </a>
+
+    <a
+        href="#"
+        id="footer-terms-link"
+        data-i18n="footerTerms"
+    >
+        Conditions d'utilisation
+    </a>
+
+</div>
+
+        <!-- RÉSEAUX SOCIAUX -->
+        <div class="footer-socials">
+
+            <h3 data-i18n="footerFollow">
+                Suivez-moi
+            </h3>
+
+            <div class="social-links">
+
+                <!-- FACEBOOK -->
+                <a
+                    href="https://www.facebook.com/stephane.mwamba.628008"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+
+                <!-- TIKTOK -->
+                <a
+                    href="https://www.tiktok.com/@congoclub?_r=1&_t=ZN-99ToepPrui6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                >
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+
+                <!-- GITHUB -->
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+
+                <!-- LINKEDIN -->
+                <a
+                    href="https://www.linkedin.com/in/stephane-mwamba-517457438"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+            <p data-i18n="footerCopyright">
+                © 2026 Stéphane Mwamba. Tous droits réservés.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==================== FENÊTRE D'AIDE ==================== -->
+
+    <div
+        class="modal-overlay"
+        id="help-modal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="help-close"
+                aria-label="Fermer"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+
+            <h2>
+                Aide
+            </h2>
+
+            <p>
+                Bienvenue sur mon portfolio.
+                Utilisez le menu de navigation pour découvrir
+                mon parcours, mes expertises, mes technologies
+                et mes projets.
+            </p>
+
+            <p>
+                Le menu Paramètres vous permet également
+                d'accéder aux différentes fonctionnalités
+                du site.
+            </p>
+
+            <button
+                type="button"
+                class="btn btn-primary"
+                id="help-ok"
+            >
+                J'ai compris
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================== FENÊTRE CHATBOT ==================== -->
+
+    <div
+        class="modal-overlay"
+        id="chatbot-modal"
+    >
+
+        <div class="modal-box chatbot-box">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="chatbot-close"
+                aria-label="Fermer"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <h2>
+                Chatbot
+            </h2>
+
+            <div class="chatbot-messages">
+
+                <div class="chat-message bot-message">
+
+                    <span class="chat-message-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </span>
+
+                    <p>
+                        Bonjour 👋 Je suis l'assistant de Stéphane.
+                        Comment puis-je vous aider ?
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form
+                class="chatbot-form"
+                id="chatbot-form"
+            >
+
+                <input
+                    type="text"
+                    id="chatbot-input"
+                    placeholder="Écrivez votre question..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="submit"
+                    aria-label="Envoyer"
+                >
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================== PLUS D'INFORMATIONS ==================== -->
+
+    <div
+        class="modal-overlay"
+        id="information-modal"
+    >
+
+        <div class="modal-box information-box">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="information-close"
+                aria-label="Fermer"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+
+            <h2>
+                Plus d'informations
+            </h2>
+
+
+            <div class="information-content">
+
+                <!-- PROFIL -->
+                <div class="information-item">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <div>
+
+                        <h3>
+                            Stéphane Mwamba
+                        </h3>
+
+                        <p>
+                            Développeur Web & Logiciel
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DOMAINE -->
+                <div class="information-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <div>
+
+                        <h3>
+                            Mon domaine
+                        </h3>
+
+                        <p>
+                            Développement web, logiciel, solutions
+                            digitales et informatique de gestion.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VISION -->
+                <div class="information-item">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <div>
+
+                        <h3>
+                            Ma vision
+                        </h3>
+
+                        <p>
+                            Transformer des idées et des besoins
+                            concrets en solutions digitales utiles.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PORTFOLIO -->
+                <div class="information-item">
+
+                    <i class="fa-solid fa-rocket"></i>
+
+                    <div>
+
+                        <h3>
+                            Ce portfolio
+                        </h3>
+
+                        <p>
+                            Il présente mon parcours, mes expertises,
+                            mes technologies et les projets que j'ai conçus.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================== CONFIDENTIALITÉ ==================== -->
+
+    <div
+        class="modal-overlay"
+        id="privacy-modal"
+    >
+
+        <div class="modal-box privacy-box">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="privacy-close"
+                aria-label="Fermer"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h2>
+                Confidentialité
+            </h2>
+
+
+            <div class="privacy-content">
+
+                <!-- DONNÉES -->
+                <div class="privacy-item">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <div>
+
+                        <h3>
+                            Vos données
+                        </h3>
+
+                        <p>
+                            Ce portfolio ne demande pas de créer un compte
+                            et ne collecte pas de données personnelles
+                            simplement lors de la consultation du site.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT -->
+                <div class="privacy-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <h3>
+                            Contact
+                        </h3>
+
+                        <p>
+                            Lorsque vous utilisez l'adresse email affichée
+                            sur le site, les informations sont transmises
+                            au service de messagerie utilisé pour envoyer
+                            votre message.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COOKIES -->
+                <div class="privacy-item">
+
+                    <i class="fa-solid fa-cookie-bite"></i>
+
+                    <div>
+
+                        <h3>
+                            Cookies
+                        </h3>
+
+                        <p>
+                            Le site peut utiliser des fonctionnalités
+                            techniques nécessaires à son fonctionnement.
+                            Aucune utilisation commerciale de vos données
+                            n'est prévue dans le cadre de ce portfolio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROTECTION -->
+                <div class="privacy-item">
+
+                    <i class="fa-solid fa-shield"></i>
+
+                    <div>
+
+                        <h3>
+                            Protection
+                        </h3>
+
+                        <p>
+                            La protection des informations des visiteurs
+                            constitue une priorité lors de l'évolution
+                            du site.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================== CONDITIONS D'UTILISATION ==================== -->
+
+    <div
+        class="modal-overlay"
+        id="terms-modal"
+    >
+
+        <div class="modal-box terms-box">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="terms-close"
+                aria-label="Fermer"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-file-contract"></i>
+            </div>
+
+            <h2>
+                Conditions d'utilisation
+            </h2>
+
+
+            <div class="terms-content">
+
+                <!-- UTILISATION -->
+                <div class="terms-item">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <div>
+
+                        <h3>
+                            Utilisation du site
+                        </h3>
+
+                        <p>
+                            Ce portfolio est destiné à présenter
+                            le profil, les compétences, les réalisations
+                            et les services de Stéphane Mwamba.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTENU -->
+                <div class="terms-item">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <div>
+
+                        <h3>
+                            Contenu du portfolio
+                        </h3>
+
+                        <p>
+                            Les textes, éléments graphiques, interfaces
+                            et réalisations présentés sur ce site sont
+                            destinés à présenter le travail de Stéphane.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- UTILISATION RESPONSABLE -->
+                <div class="terms-item">
+
+                    <i class="fa-solid fa-ban"></i>
+
+                    <div>
+
+                        <h3>
+                            Utilisation responsable
+                        </h3>
+
+                        <p>
+                            Il est demandé aux visiteurs de ne pas utiliser
+                            le site ou son contenu d'une manière illégale,
+                            abusive ou susceptible de nuire au site.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ÉVOLUTION -->
+                <div class="terms-item">
+
+                    <i class="fa-solid fa-arrows-rotate"></i>
+
+                    <div>
+
+                        <h3>
+                            Évolution du site
+                        </h3>
+
+                        <p>
+                            Le contenu et les fonctionnalités du portfolio
+                            peuvent évoluer afin d'améliorer l'expérience
+                            des visiteurs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACCEPTATION -->
+                <div class="terms-item">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <div>
+
+                        <h3>
+                            Acceptation
+                        </h3>
+
+                        <p>
+                            En consultant ce site, vous acceptez de l'utiliser
+                            de manière responsable et conformément à sa
+                            vocation de portfolio professionnel.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
