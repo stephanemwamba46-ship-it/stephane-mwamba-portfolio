@@ -590,7 +590,7 @@ footerFollow:
     "Suivez-moi",
 
 footerCopyright:
-    "© 2026 Stéphane Mwamba. Tous droits réservés.",
+    "©Tous droits réservés.",
         // ==================== AIDE ====================
 
         helpTitle:
