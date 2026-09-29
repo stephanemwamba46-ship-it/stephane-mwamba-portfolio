@@ -4130,3 +4130,28 @@ body.dark-mode .projects-slider-wrapper::after {
     margin-left: auto;
     margin-right: auto;
 }
+/* CONTACT EN GRAND BOUTON — MOBILE UNIQUEMENT */
+@media (max-width: 768px) {
+
+    .nav-links.active li:has(a[href="#contact"]) {
+        order: 6;
+        margin-top: 15px;
+    }
+
+    .nav-links.active li:has(a[href="#contact"]) a {
+        width: 100%;
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--color-red);
+        color: #fff;
+
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 800;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+}
