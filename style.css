@@ -4242,8 +4242,8 @@ body.dark-mode .projects-slider-wrapper::after {
 @media (max-width: 768px) {
     .hero {
         min-height: auto;
-        padding-top: 170px;
-        padding-bottom: 170px;
+        padding-top: 150px;
+        padding-bottom: 150px;
         gap: 90px;
     }
 
