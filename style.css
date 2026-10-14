@@ -3552,7 +3552,7 @@ body.dark-mode .projects-arrow:hover {
 
     overflow: hidden;
 
-    background-image: url("images/stephane.png");
+    background-image: url("images/stephanex.png");
     background-size: cover;
     background-position: center 25%;
 
@@ -4153,5 +4153,107 @@ body.dark-mode .projects-slider-wrapper::after {
         font-weight: 800;
 
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+}
+
+/* =====================================================
+   HERO — VOILE SOMBRE, CONTRASTE ET OMBRE
+   ===================================================== */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border-radius: 24px;
+    /* Conserve la photo actuelle */
+    background-image: url("images/stephanem.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Ombre extérieure et légère bordure */
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.22),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+/* Dégradé sombre inspiré de la section des chiffres */
+.hero::before {
+    display: block !important;
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.82),
+        rgba(0, 0, 0, 0.58),
+        rgba(0, 0, 0, 0.72)
+    );
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Le texte et les boutons restent au-dessus du voile */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.hero h1 {
+    color: #ffffff;
+}
+
+.hero h2 {
+    color: #ffffff;
+}
+
+.hero .hero-description {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.hero .hero-buttons {
+    position: relative;
+    z-index: 2;
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+    .hero {
+        background-position: center top;
+    }
+
+    .hero::before {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.80)
+        );
+    }
+}
+
+/* =========================================
+   HERO — VERSION MOBILE PLUS COMPACTE
+   ========================================= */
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding-top: 170px;
+        padding-bottom: 170px;
+        gap: 90px;
+    }
+
+    .hero-content {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.6rem, 20vw, 6.8rem);
+        line-height: 0.98;
     }
 }

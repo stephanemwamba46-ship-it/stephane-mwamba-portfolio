@@ -391,98 +391,51 @@ expertiseMarketingDescription:
         nextProject:
             "Projet suivant",
 
+        viewProject: "Voir le projet",
 
-        // ==================== NZELAPAY ====================
+        // ==================== SKULLVI ====================
 
-        projectDiscoverNzela:
-            "Découvrir NzelaPay",
+        projectDiscoverSkullvi:
+            "Découvrir Skullvi",
 
-        projectNzelaCategory:
-            "Fintech · Marketplace",
-
-        projectNzelaDescription:
-            "Plateforme de paiement et marketplace de produits et services numériques.",
-
+        projectSkullviDescription:
+            "Centraliser les candidatures, qualifier les profils et faire ressortir rapidement les talents à examiner en priorité.",
+        
 
         // ==================== LEMARCHÉ ====================
 
         projectDiscoverLemarche:
             "Découvrir Lemarché",
 
-        projectLemarcheCategory:
-            "Marketplace",
-
         projectLemarcheDescription:
             "Plateforme mettant en relation vendeurs et acheteurs dans un espace numérique simple.",
-
+       
 
         // ==================== SANTÉ ====================
 
         projectDiscoverHealth:
             "Découvrir la plateforme de santé",
 
-        projectHealthCategory:
-            "Santé · Gestion",
-
         projectHealthDescription:
             "Solution web destinée à la gestion des patients et des activités hospitalières.",
 
-
+       
         // ==================== MS AGENCY ====================
 
         projectDiscoverAgency:
             "Découvrir MS Agency",
 
-        projectAgencyCategory:
-            "Digital · Services",
-
         projectAgencyDescription:
             "Plateforme de services digitaux, création web, marketing et formations.",
-
+      
 
         // ==================== EKOLIER ====================
 
         projectDiscoverEkolier:
             "Découvrir Ekolier",
 
-        projectEkolierCategory:
-            "Éducation · Gestion",
-
         projectEkolierDescription:
             "Plateforme destinée à la gestion scolaire et au suivi des activités éducatives.",
-
-
-        // ==================== MÉTADONNÉES PROJETS ====================
-
-        webSoftware:
-            "Web & Logiciel",
-
-        fintech:
-            "Fintech",
-
-        webDevelopment:
-            "Développement Web",
-
-        ecommerce:
-            "E-commerce",
-
-        dataManagement:
-            "Gestion de données",
-
-        health:
-            "Santé",
-
-        digitalSolutions:
-            "Solutions digitales",
-
-        marketing:
-            "Marketing",
-
-        education:
-            "Éducation",
-
-        management:
-            "Gestion",
 
 
         // ==================== CHIFFRES ====================
@@ -835,7 +788,7 @@ expertiseMarketingDescription:
 
 
         // ==================== PROJECTS ====================
-
+        
         projectsLabel:
             "PROJECTS",
 
@@ -854,17 +807,16 @@ expertiseMarketingDescription:
         nextProject:
             "Next project",
 
+         viewProject: "View project",
 
-        // ==================== NZELAPAY ====================
+        
+        // ==================== SKULLVI ====================
 
-        projectDiscoverNzela:
-            "Discover NzelaPay",
+        projectDiscoverSkullvi:
+            "Discover Skullvi",
 
-        projectNzelaCategory:
-            "Fintech · Marketplace",
-
-        projectNzelaDescription:
-            "Payment platform and marketplace for digital products and services.",
+        projectSkullviDescription:
+            "Centralize applications, assess candidates, and quickly identify the talent that should be prioritized for review.",
 
 
         // ==================== LEMARCHÉ ====================
@@ -872,8 +824,6 @@ expertiseMarketingDescription:
         projectDiscoverLemarche:
             "Discover Lemarché",
 
-        projectLemarcheCategory:
-            "Marketplace",
 
         projectLemarcheDescription:
             "Platform connecting sellers and buyers in a simple digital space.",
@@ -884,9 +834,6 @@ expertiseMarketingDescription:
         projectDiscoverHealth:
             "Discover the healthcare platform",
 
-        projectHealthCategory:
-            "Healthcare · Management",
-
         projectHealthDescription:
             "Web solution designed to manage patients and hospital activities.",
 
@@ -895,9 +842,6 @@ expertiseMarketingDescription:
 
         projectDiscoverAgency:
             "Discover MS Agency",
-
-        projectAgencyCategory:
-            "Digital · Services",
 
         projectAgencyDescription:
             "Digital services platform covering web creation, marketing and training.",
@@ -908,46 +852,11 @@ expertiseMarketingDescription:
         projectDiscoverEkolier:
             "Discover Ekolier",
 
-        projectEkolierCategory:
-            "Education · Management",
 
         projectEkolierDescription:
             "Platform designed for school management and educational activity tracking.",
 
-
-        // ==================== PROJECT METADATA ====================
-
-        webSoftware:
-            "Web & Software",
-
-        fintech:
-            "Fintech",
-
-        webDevelopment:
-            "Web Development",
-
-        ecommerce:
-            "E-commerce",
-
-        dataManagement:
-            "Data Management",
-
-        health:
-            "Healthcare",
-
-        digitalSolutions:
-            "Digital Solutions",
-
-        marketing:
-            "Marketing",
-
-        education:
-            "Education",
-
-        management:
-            "Management",
-
-
+        viewProject: "View project",
         // ==================== STATS ====================
 
         statsLabel:
@@ -2230,3 +2139,10 @@ if (footerTermsLink) {
     });
 
 }
+document
+    .querySelectorAll(".project-visit-link.is-placeholder")
+    .forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+        });
+    });
